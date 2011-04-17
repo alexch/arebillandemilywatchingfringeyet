@@ -1,23 +1,50 @@
 <html>
 <head>
     <title>Are Bill and Emily Watching Fringe Yet?</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.pic').hide();
+        var shown = Math.floor(Math.random()*$('.pics .pic').size());
+        $($('.pics .pic').get(shown)).show();
+    });
+    </script>
 </head>
-
 <body>
 
-<center>
-    
-    <p style="font-size: 36pt">
-    No.
-    </p>
+    <center>
 
-<p>
-    <img src="sadnimoy.JPG">
-    <br>
-    <i>This makes Belly quite concerned.</i>
-</p>
+        <p style="font-size: 36pt">
+            No.
+        </p>
 
-</center>
+        <div class="pics">
+            <p class="pic">
+                <img src="sadnimoy.JPG">
+                <br>
+                <i>This makes Belly quite concerned.</i>
+            </p>
+
+            <p class="pic">
+                <img src="fringe-inconsolable.jpg">
+                <br>
+                <i>Olivia is inconsolable.</i>
+            </p>
+
+            <p class="pic">
+                <img src="fringe-team.jpg">
+                <br>
+                <i>The team is stunned by the news.</i>
+            </p>
+
+            <p class="pic">
+                <img src="peter_headache.jpg">
+                <br>
+                <i>This gives Peter a headache.</i>
+            </p>
+        </div>
+
+    </center>
 
 </body>
 </html>
