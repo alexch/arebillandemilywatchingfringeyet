@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Are Bill and Emily Watching Fringe Yet?</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.pic').hide();
+        var shown = Math.floor(Math.random()*$('.pics .pic').size());
+        $($('.pics .pic').get(shown)).show();
+    });
+    </script>
+</head>
+<body>
+
+    <center>
+
+        <p style="font-size: 36pt">
+            No.
+        </p>
+
+        <div class="pics">
+            <p class="pic">
+                <img src="sadnimoy.JPG">
+                <br>
+                <i>This makes Belly quite concerned.</i>
+            </p>
+
+            <p class="pic">
+                <img src="fringe-inconsolable.jpg">
+                <br>
+                <i>Olivia is inconsolable.</i>
+            </p>
+
+            <p class="pic">
+                <img src="fringe-team.jpg">
+                <br>
+                <i>The team is stunned by the news.</i>
+            </p>
+
+            <p class="pic">
+                <img src="peter_headache.jpg">
+                <br>
+                <i>This gives Peter a headache.</i>
+            </p>
+            
+        </div>
+
+        <p style="font-size: 10pt; border-top: 1px solid black; margin-top: 4em;">
+            <a href='#' onclick='window.location=window.location'>Refresh</a> for more silliness.
+            An <a href="http://alexch.github.com">Alex Chaffee</a> joint.
+            A <a href="http://poliscifiradio.com">PoliSciFi Radio</a> travesty.
+            Idea by <a href="http://gerrycanavan.com">Gerry</a>.
+        </p>
+    
+    </center>
+
+</body>
+</html>
